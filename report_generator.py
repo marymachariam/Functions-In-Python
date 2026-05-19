@@ -1,3 +1,8 @@
+name = input("Enter your name: ")
+backend = int(input("Enter your backend marks: "))
+frontend = int(input("Enter your frontend marks: "))
+design = int(input("Enter your design marks: "))
+
 def marks_average(backend,frontend, design):
     average = (backend + frontend + design)/3
     return average
@@ -17,11 +22,7 @@ def grades(average):
     return grade
     
 def students_report():
-    name = input("Enter your name: ")
-    backend = int(input("Enter your backend marks: "))
-    frontend = int(input("Enter your frontend marks: "))
-    design = int(input("Enter your design marks: "))
-
+   
     average = marks_average(backend, frontend, design)
     grade = grades(average)
 
